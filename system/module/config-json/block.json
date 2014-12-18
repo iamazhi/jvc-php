@@ -1,0 +1,40 @@
+{
+  "allowedTags":"<p><span><h1><h2><h3><h4><h5><em><u><strong><br><ol><ul><li><img><a><b><font><hr><pre><div><table><td><th><tr><tbody><iframe><embed><style><header><nav><meta><script><style><object><param><embed><form><button>",
+  "editor":{
+    "create":{
+      "id":"content","tools":"full"
+    },
+    "edit":{
+      "id":"content","tools":"full"
+    }
+  },
+  "require": {
+    "create":"title, 
+    template","edit":"title"
+  },
+  "defaultIcons": {
+    "about":"icon-group",
+    "html":"",
+    "contact":"icon-phone",
+    "followUs":"icon-weixin",
+    "links":"icon-link",
+    "latestArticle":"icon-list-ul",
+    "hotArticle":"icon-list-ul",
+    "latestBlog":"icon-list-ul",
+    "latestThread":"icon-list-ul",
+    "latestProduct":"icon-th",
+    "hotProduct":"icon-th",
+    "articleTree":"icon-folder-close",
+    "productTree":"icon-folder-close",
+    "blogTree":"icon-folder-close"
+  },
+  "defaultMoreUrl": {
+    "html":"",
+    "latestArticle":"",
+    "hotArticle":"",
+    "latestProduct":"",
+    "hotProduct":"",
+    "about":"",
+    "contact":""
+  }
+}

@@ -1,0 +1,1 @@
+{"message":{"types":"comment,message,notice,reply","recPerPage":10,"require":{"post":"from, type, content","reply":"from, type, content"}}}

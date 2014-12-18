@@ -1,0 +1,27 @@
+{
+  "article":
+  {
+    "require":
+    {
+      "create":"categories, title, content",
+      "page":"title, content",
+      "link":"categories, title, link",
+      "pageLink":"title, link",
+      "edit":"categories, title, content"
+    },
+    "editor":
+    {
+      "create":
+      {
+        "id":"content",
+        "tools":"full"
+      },
+      "edit":
+      {
+        "id":"content",
+        "tools":"full"
+      }
+    },
+    "recPerPage":5
+  }
+}

@@ -1,0 +1,1 @@
+{"user":{"resetExpired":259200,"require":{"register":"account,realname,email,password1","edit":"realname,email"},"default":{"module":"admin","method":"index"},"recPerPage":{"thread":10,"reply":20}}}

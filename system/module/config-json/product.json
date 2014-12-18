@@ -1,0 +1,1 @@
+{"product":{"recPerPage":15,"require":{"create":"categories, name, content","edit":"categories, name, content"},"editor":{"create":{"id":"desc,content","tools":"full"},"edit":{"id":"desc,content","tools":"full"}}}}

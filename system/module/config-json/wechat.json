@@ -1,0 +1,1 @@
+{"wechat":{"require":{"create":"name,account,token","edit":"name,account,token,appID,appSecret"}}}

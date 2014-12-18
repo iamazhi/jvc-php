@@ -1,0 +1,1 @@
+{"thread":{"newDays":3,"editor":{"post":{"id":"content","tools":"simple"},"view":{"id":"content","tools":"simple"},"edit":{"id":"content","tools":"simple"}},"require":{"post":"title, content","edit":"title, content","link":"title, link"}}}

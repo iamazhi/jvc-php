@@ -1,0 +1,20 @@
+{
+  "file":{
+    "require":{
+      "edit":"title"
+    },
+    "thumbs":{
+      "s":{
+        "width":"80","height":"80"
+      },"m":{
+        "width":"300","height":"300"
+      },"l":{
+        "width":"800","height":"600"
+      }
+    },
+    "imageExtensions":["jpeg","jpg","gif","png"],
+    "mimes":{
+      "default":"application\/octet-stream"
+    }
+  }
+}
