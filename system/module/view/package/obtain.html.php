@@ -1,17 +1,5 @@
-<?php
-/**
- * The obtain view file of package module of ChanZhiEPS.
- *
- * @copyright   Copyright 2009-2013 青岛息壤网络信息有限公司 (QingDao XiRang Network Infomation Co,LTD www.xirangit.com)
- * @license     http://api.chanzhi.org/goto.php?item=license
- * @author      Chunsheng Wang <chunsheng@xirangit.com>
- * @package     package
- * @version     $Id$
- * @link        http://www.chanzhi.org
- */
-?>
-<?php include '../../common/view/header.admin.html.php';?>
-<?php include '../../common/view/treeview.html.php';?>
+<?php include commonModel::get('header.admin');?>
+<?php include commonModel::get('treeview');?>
 <div class='row'>
 <div class='col-md-3'>
   <div class='panel panel-sm'>
@@ -149,4 +137,4 @@
 $('#<?php echo $type;?>').addClass('active')
 $('#module<?php echo $moduleID;?>').addClass('active')
 </script>
-<?php include '../../common/view/footer.admin.html.php';?>
+<?php include commonModel::get('footer.admin');?>

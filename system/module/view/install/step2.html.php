@@ -1,15 +1,4 @@
-<?php
-/**
- * The html template file of step2 method of install module of chanzhiEPS.
- *
- * @copyright   Copyright 2013-2013 青岛息壤网络信息有限公司 (QingDao XiRang Network Infomation Co,LTD www.xirangit.com)
- * @license     http://api.chanzhi.org/goto.php?item=license
- * @author      Chunsheng Wang <chunsheng@cnezsoft.com>
- * @package     chanzhiEPS
- * @version     $Id$
- */
-?>
-<?php include '../../common/view/header.lite.html.php';?>
+<?php include commonModel::get('header.lite');?>
 <div class='container'>
   <div class='modal-dialog'>
     <form method='post' action='<?php echo $this->createLink('install', 'step3');?>' class='form-inline' id='form1'>

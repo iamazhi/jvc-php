@@ -336,7 +336,7 @@ class control
         $moduleName = strtolower(trim($moduleName));
         $methodName = strtolower(trim($methodName));
 
-        $modulePath = $this->app->getModulePath($moduleName);
+        $modulePath = $this->app->getModulePath($moduleName, 'view');
 
         $cssExtPath = $this->app->getModuleExtPath($moduleName, 'css') ;
 
@@ -384,7 +384,7 @@ class control
         $moduleName = strtolower(trim($moduleName));
         $methodName = strtolower(trim($methodName));
         
-        $modulePath = $this->app->getModulePath($moduleName);
+        $modulePath = $this->app->getModulePath($moduleName, 'view');
         $jsExtPath  = $this->app->getModuleExtPath($moduleName, 'js');
 
         $js = '';

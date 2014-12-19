@@ -270,3 +270,63 @@
   SELECT id, alias FROM jvc_category WHERE type  = 'forum'
   SELECT id, alias FROM jvc_category WHERE type  = 'blog'
 
+20141218 17:56:17: /flll.php?m=misc&f=ping&t=html
+  SELECT * FROM jvc_config WHERE owner IN ('system','admin') ORDER BY id
+  SELECT alias, id as category, type as module FROM jvc_category WHERE alias  != '' AND type IN ('article','product')
+  SELECT alias, id, 'page' as module FROM jvc_article WHERE type  = 'page'
+  SELECT id, alias FROM jvc_category WHERE type  = 'forum'
+  SELECT id, alias FROM jvc_category WHERE type  = 'blog'
+
+20141218 17:57:10: /flll.php?m=admin&f=index
+  SELECT * FROM jvc_config WHERE owner IN ('system','admin') ORDER BY id
+  SELECT alias, id as category, type as module FROM jvc_category WHERE alias  != '' AND type IN ('article','product')
+  SELECT alias, id, 'page' as module FROM jvc_article WHERE type  = 'page'
+  SELECT id, alias FROM jvc_category WHERE type  = 'forum'
+  SELECT id, alias FROM jvc_category WHERE type  = 'blog'
+
+20141218 17:57:11: /flll.php?m=site&f=setbasic
+  SELECT * FROM jvc_config WHERE owner IN ('system','admin') ORDER BY id
+  SELECT alias, id as category, type as module FROM jvc_category WHERE alias  != '' AND type IN ('article','product')
+  SELECT alias, id, 'page' as module FROM jvc_article WHERE type  = 'page'
+  SELECT id, alias FROM jvc_category WHERE type  = 'forum'
+  SELECT id, alias FROM jvc_category WHERE type  = 'blog'
+
+20141218 17:57:13: /flll.php?m=admin&f=index
+  SELECT * FROM jvc_config WHERE owner IN ('system','admin') ORDER BY id
+  SELECT alias, id as category, type as module FROM jvc_category WHERE alias  != '' AND type IN ('article','product')
+  SELECT alias, id, 'page' as module FROM jvc_article WHERE type  = 'page'
+  SELECT id, alias FROM jvc_category WHERE type  = 'forum'
+  SELECT id, alias FROM jvc_category WHERE type  = 'blog'
+
+20141218 17:57:14: /flll.php?m=company&f=setbasic
+  SELECT * FROM jvc_config WHERE owner IN ('system','admin') ORDER BY id
+  SELECT alias, id as category, type as module FROM jvc_category WHERE alias  != '' AND type IN ('article','product')
+  SELECT alias, id, 'page' as module FROM jvc_article WHERE type  = 'page'
+  SELECT id, alias FROM jvc_category WHERE type  = 'forum'
+  SELECT id, alias FROM jvc_category WHERE type  = 'blog'
+
+20141218 17:57:15: /flll.php?m=admin&f=index
+  SELECT * FROM jvc_config WHERE owner IN ('system','admin') ORDER BY id
+  SELECT alias, id as category, type as module FROM jvc_category WHERE alias  != '' AND type IN ('article','product')
+  SELECT alias, id, 'page' as module FROM jvc_article WHERE type  = 'page'
+  SELECT id, alias FROM jvc_category WHERE type  = 'forum'
+  SELECT id, alias FROM jvc_category WHERE type  = 'blog'
+
+20141218 17:57:16: /flll.php?m=product&f=admin
+  SELECT * FROM jvc_config WHERE owner IN ('system','admin') ORDER BY id
+  SELECT alias, id as category, type as module FROM jvc_category WHERE alias  != '' AND type IN ('article','product')
+  SELECT alias, id, 'page' as module FROM jvc_article WHERE type  = 'page'
+  SELECT id, alias FROM jvc_category WHERE type  = 'forum'
+  SELECT id, alias FROM jvc_category WHERE type  = 'blog'
+  SELECT * FROM jvc_category WHERE type  = 'product' ORDER BY grade desc, `order`
+  SELECT t1.*, t2.category FROM jvc_product AS t1  LEFT JOIN jvc_relation AS t2  ON t1.id = t2.id  WHERE 1 = 1  GROUP BY t2.id ORDER BY `order` desc
+  SELECT SQL_CALC_FOUND_ROWS  t1.*, t2.category FROM jvc_product AS t1  LEFT JOIN jvc_relation AS t2  ON t1.id = t2.id  wHeRe 1 = 1  gRoUp bY t2.id 
+  SELECT t1.*, t2.category FROM jvc_product AS t1  LEFT JOIN jvc_relation AS t2  ON t1.id = t2.id  WHERE 1 = 1  GROUP BY t2.id ORDER BY `order` desc
+
+20141218 17:57:17: /flll.php?m=admin&f=index
+  SELECT * FROM jvc_config WHERE owner IN ('system','admin') ORDER BY id
+  SELECT alias, id as category, type as module FROM jvc_category WHERE alias  != '' AND type IN ('article','product')
+  SELECT alias, id, 'page' as module FROM jvc_article WHERE type  = 'page'
+  SELECT id, alias FROM jvc_category WHERE type  = 'forum'
+  SELECT id, alias FROM jvc_category WHERE type  = 'blog'
+

@@ -1,16 +1,4 @@
-<?php
-/**
- * The install view file of package module of ChanZhiEPS.
- *
- * @copyright   Copyright 2009-2013 青岛息壤网络信息有限公司 (QingDao XiRang Network Infomation Co,LTD www.xirangit.com)
- * @license     http://api.chanzhi.org/goto.php?item=license
- * @author      Chunsheng Wang <chunsheng@xirangit.com>
- * @package     package
- * @version     $Id$
- * @link        http://www.chanzhi.org
- */
-?>
-<?php include '../../common/view/header.modal.html.php';?>
+<?php include commonModel::get('header.modal');?>
 <?php js::set('browseLink', inlink('browse'));?>
 <?php if($error):?>
 <div class='alert alert-default'>
@@ -53,4 +41,4 @@
   ?>
 </div>
 <?php endif;?>
-<?php include '../../common/view/footer.modal.html.php';?>
+<?php include commonModel::get('footer.modal');?>

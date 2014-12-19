@@ -1,4 +1,4 @@
-<?php include '../../common/view/header.modal.html.php';?>
+<?php include commonModel::get('header.modal');?>
 <table class='table table-bordered'>
   <thead>
     <tr>
@@ -57,4 +57,4 @@
     <?php endif;?>
   </table>
 </form>
-<?php include '../../common/view/footer.modal.html.php';?>
+<?php include commonModel::get('footer.modal');?>

@@ -1,4 +1,4 @@
-<?php include '../../common/view/header.modal.html.php';?>
+<?php include commonModel::get('header.modal');?>
 <form method='post' id='qrcodeForm' enctype='multipart/form-data' action="<?php echo inlink('qrcode', "public={$public->id}")?>">
   <table class='table table-form'>
     <tr>
@@ -9,4 +9,4 @@
     </tr>
   </table>
 </form>
-<?php include '../../common/view/footer.modal.html.php';?>
+<?php include commonModel::get('footer.modal');?>

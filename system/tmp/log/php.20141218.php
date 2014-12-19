@@ -2614,3 +2614,503 @@
 17:50:16 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 515 when visiting /flll.php?m=admin&f=index
 
 17:50:16 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/module/view/common/footer.admin.html.php on line 21 when visiting /flll.php?m=admin&f=index
+
+17:56:17 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/common.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:56:17 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/common.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:56:17 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:56:17 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:56:17 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1481 when visiting 
+
+17:56:17 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:56:17 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1481 when visiting 
+
+17:56:17 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:56:17 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/site.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:56:17 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/site.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:56:17 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting /flll.php?m=misc&f=ping&t=html
+
+17:56:17 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/user.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=misc&f=ping&t=html
+
+17:56:17 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/user.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=misc&f=ping&t=html
+
+17:56:17 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting /flll.php?m=misc&f=ping&t=html
+
+17:56:17 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1481 when visiting /flll.php?m=misc&f=ping&t=html
+
+17:57:10 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/common.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:10 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/common.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:10 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:10 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:10 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1481 when visiting 
+
+17:57:10 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:10 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1481 when visiting 
+
+17:57:10 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:10 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/site.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:10 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/site.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:10 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting /flll.php?m=admin&f=index
+
+17:57:10 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/user.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=admin&f=index
+
+17:57:10 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/user.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting /flll.php?m=admin&f=index
+
+17:57:10 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/admin.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=admin&f=index
+
+17:57:10 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/admin.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Missing argument 2 for router::getModulePath(), called in /Users/user05/work/jvc-php/system/framework/control.class.php on line 339 and defined in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1047 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1050 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1051 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1052 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Illegal string offset 'common' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 365 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Illegal string offset 'site' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 368 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Missing argument 2 for router::getModulePath(), called in /Users/user05/work/jvc-php/system/framework/control.class.php on line 387 and defined in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1047 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1050 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1051 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1052 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Illegal string offset 'common' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 412 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Illegal string offset 'site' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 415 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/framework/control.class.php on line 305 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/framework/control.class.php on line 305 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/framework/control.class.php on line 305 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 515 when visiting /flll.php?m=admin&f=index
+
+17:57:10 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/module/view/common/footer.admin.html.php on line 21 when visiting /flll.php?m=admin&f=index
+
+17:57:11 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/common.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:11 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/common.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:11 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:11 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:11 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1481 when visiting 
+
+17:57:11 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:11 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1481 when visiting 
+
+17:57:11 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:11 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/site.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:11 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/site.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:11 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/user.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/user.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 Missing argument 2 for router::getModulePath(), called in /Users/user05/work/jvc-php/system/framework/control.class.php on line 339 and defined in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1047 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1050 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1051 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1052 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 Illegal string offset 'common' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 365 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 Illegal string offset 'site' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 368 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 Missing argument 2 for router::getModulePath(), called in /Users/user05/work/jvc-php/system/framework/control.class.php on line 387 and defined in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1047 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1050 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1051 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1052 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 Illegal string offset 'common' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 412 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 Illegal string offset 'site' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 415 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 include(../../common/view/header.admin.html.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/module/view/site/setbasic.html.php on line 13 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 include(): Failed opening '../../common/view/header.admin.html.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/module/view/site/setbasic.html.php on line 13 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 include(../../common/view/kindeditor.html.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/module/view/site/setbasic.html.php on line 14 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 include(): Failed opening '../../common/view/kindeditor.html.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/module/view/site/setbasic.html.php on line 14 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 include(../../common/view/footer.admin.html.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/module/view/site/setbasic.html.php on line 88 when visiting /flll.php?m=site&f=setbasic
+
+17:57:11 include(): Failed opening '../../common/view/footer.admin.html.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/module/view/site/setbasic.html.php on line 88 when visiting /flll.php?m=site&f=setbasic
+
+17:57:13 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/common.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:13 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/common.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:13 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:13 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:13 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1481 when visiting 
+
+17:57:13 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:13 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1481 when visiting 
+
+17:57:13 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:13 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/site.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:13 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/site.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:13 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting /flll.php?m=admin&f=index
+
+17:57:13 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/user.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=admin&f=index
+
+17:57:13 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/user.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting /flll.php?m=admin&f=index
+
+17:57:13 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/admin.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=admin&f=index
+
+17:57:13 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/admin.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Missing argument 2 for router::getModulePath(), called in /Users/user05/work/jvc-php/system/framework/control.class.php on line 339 and defined in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1047 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1050 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1051 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1052 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Illegal string offset 'common' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 365 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Illegal string offset 'site' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 368 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Missing argument 2 for router::getModulePath(), called in /Users/user05/work/jvc-php/system/framework/control.class.php on line 387 and defined in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1047 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1050 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1051 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1052 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Illegal string offset 'common' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 412 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Illegal string offset 'site' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 415 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/framework/control.class.php on line 305 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/framework/control.class.php on line 305 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/framework/control.class.php on line 305 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 515 when visiting /flll.php?m=admin&f=index
+
+17:57:13 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/module/view/common/footer.admin.html.php on line 21 when visiting /flll.php?m=admin&f=index
+
+17:57:14 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/common.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:14 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/common.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:14 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:14 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:14 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1481 when visiting 
+
+17:57:14 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:14 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1481 when visiting 
+
+17:57:14 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:14 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/site.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:14 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/site.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:14 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/user.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/user.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/company.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/company.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 Missing argument 2 for router::getModulePath(), called in /Users/user05/work/jvc-php/system/framework/control.class.php on line 339 and defined in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1047 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1050 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1051 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1052 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 Illegal string offset 'common' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 365 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 Illegal string offset 'site' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 368 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 Missing argument 2 for router::getModulePath(), called in /Users/user05/work/jvc-php/system/framework/control.class.php on line 387 and defined in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1047 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1050 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1051 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1052 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 Illegal string offset 'common' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 412 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 Illegal string offset 'site' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 415 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 include(../../common/view/header.admin.html.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/module/view/company/setbasic.html.php on line 13 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 include(): Failed opening '../../common/view/header.admin.html.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/module/view/company/setbasic.html.php on line 13 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 include(../../common/view/kindeditor.html.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/module/view/company/setbasic.html.php on line 14 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 include(): Failed opening '../../common/view/kindeditor.html.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/module/view/company/setbasic.html.php on line 14 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 include(../../common/view/footer.admin.html.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/module/view/company/setbasic.html.php on line 42 when visiting /flll.php?m=company&f=setbasic
+
+17:57:14 include(): Failed opening '../../common/view/footer.admin.html.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/module/view/company/setbasic.html.php on line 42 when visiting /flll.php?m=company&f=setbasic
+
+17:57:15 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/common.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:15 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/common.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:15 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:15 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:15 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1481 when visiting 
+
+17:57:15 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:15 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1481 when visiting 
+
+17:57:15 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:15 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/site.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:15 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/site.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:15 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting /flll.php?m=admin&f=index
+
+17:57:15 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/user.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=admin&f=index
+
+17:57:15 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/user.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting /flll.php?m=admin&f=index
+
+17:57:15 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/admin.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=admin&f=index
+
+17:57:15 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/admin.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Missing argument 2 for router::getModulePath(), called in /Users/user05/work/jvc-php/system/framework/control.class.php on line 339 and defined in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1047 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1050 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1051 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1052 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Illegal string offset 'common' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 365 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Illegal string offset 'site' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 368 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Missing argument 2 for router::getModulePath(), called in /Users/user05/work/jvc-php/system/framework/control.class.php on line 387 and defined in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1047 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1050 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1051 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1052 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Illegal string offset 'common' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 412 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Illegal string offset 'site' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 415 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/framework/control.class.php on line 305 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/framework/control.class.php on line 305 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/framework/control.class.php on line 305 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 515 when visiting /flll.php?m=admin&f=index
+
+17:57:15 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/module/view/common/footer.admin.html.php on line 21 when visiting /flll.php?m=admin&f=index
+
+17:57:16 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/common.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:16 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/common.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:16 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:16 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:16 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1481 when visiting 
+
+17:57:16 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:16 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1481 when visiting 
+
+17:57:16 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:16 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/site.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:16 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/site.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:16 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting /flll.php?m=product&f=admin
+
+17:57:16 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/user.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=product&f=admin
+
+17:57:16 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/user.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=product&f=admin
+
+17:57:16 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting /flll.php?m=product&f=admin
+
+17:57:16 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/product.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=product&f=admin
+
+17:57:16 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/product.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=product&f=admin
+
+17:57:16 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting /flll.php?m=product&f=admin
+
+17:57:16 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/tree.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=product&f=admin
+
+17:57:16 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/tree.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=product&f=admin
+
+17:57:16 Missing argument 2 for router::getModulePath(), called in /Users/user05/work/jvc-php/system/framework/control.class.php on line 339 and defined in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1047 when visiting /flll.php?m=product&f=admin
+
+17:57:16 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1050 when visiting /flll.php?m=product&f=admin
+
+17:57:16 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1051 when visiting /flll.php?m=product&f=admin
+
+17:57:16 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1052 when visiting /flll.php?m=product&f=admin
+
+17:57:16 Illegal string offset 'common' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 365 when visiting /flll.php?m=product&f=admin
+
+17:57:16 Illegal string offset 'site' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 368 when visiting /flll.php?m=product&f=admin
+
+17:57:16 Missing argument 2 for router::getModulePath(), called in /Users/user05/work/jvc-php/system/framework/control.class.php on line 387 and defined in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1047 when visiting /flll.php?m=product&f=admin
+
+17:57:16 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1050 when visiting /flll.php?m=product&f=admin
+
+17:57:16 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1051 when visiting /flll.php?m=product&f=admin
+
+17:57:16 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1052 when visiting /flll.php?m=product&f=admin
+
+17:57:16 Illegal string offset 'common' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 412 when visiting /flll.php?m=product&f=admin
+
+17:57:16 Illegal string offset 'site' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 415 when visiting /flll.php?m=product&f=admin
+
+17:57:16 include(../../common/view/header.admin.html.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/module/view/product/admin.html.php on line 13 when visiting /flll.php?m=product&f=admin
+
+17:57:16 include(): Failed opening '../../common/view/header.admin.html.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/module/view/product/admin.html.php on line 13 when visiting /flll.php?m=product&f=admin
+
+17:57:16 include(../../common/view/treeview.html.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/module/view/product/admin.html.php on line 14 when visiting /flll.php?m=product&f=admin
+
+17:57:16 include(): Failed opening '../../common/view/treeview.html.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/module/view/product/admin.html.php on line 14 when visiting /flll.php?m=product&f=admin
+
+17:57:16 include(../../common/view/footer.admin.html.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/module/view/product/admin.html.php on line 67 when visiting /flll.php?m=product&f=admin
+
+17:57:16 include(): Failed opening '../../common/view/footer.admin.html.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/module/view/product/admin.html.php on line 67 when visiting /flll.php?m=product&f=admin
+
+17:57:17 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/common.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:17 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/common.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:17 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:17 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:17 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1481 when visiting 
+
+17:57:17 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:17 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1481 when visiting 
+
+17:57:17 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting 
+
+17:57:17 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/site.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:17 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/site.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting 
+
+17:57:17 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting /flll.php?m=admin&f=index
+
+17:57:17 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/user.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=admin&f=index
+
+17:57:17 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/user.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Invalid argument supplied for foreach() in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 160 when visiting /flll.php?m=admin&f=index
+
+17:57:17 include(/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/admin.php): failed to open stream: No such file or directory in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=admin&f=index
+
+17:57:17 include(): Failed opening '/Users/user05/work/jvc-php/system/module/lang/zh-cn/ext/admin.php' for inclusion (include_path='.:') in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1484 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Missing argument 2 for router::getModulePath(), called in /Users/user05/work/jvc-php/system/framework/control.class.php on line 339 and defined in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1047 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1050 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1051 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1052 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Illegal string offset 'common' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 365 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Illegal string offset 'site' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 368 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Missing argument 2 for router::getModulePath(), called in /Users/user05/work/jvc-php/system/framework/control.class.php on line 387 and defined in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1047 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1050 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1051 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Undefined variable: type in /Users/user05/work/jvc-php/system/framework/router.class.php on line 1052 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Illegal string offset 'common' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 412 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Illegal string offset 'site' in /Users/user05/work/jvc-php/system/framework/control.class.php on line 415 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/framework/control.class.php on line 305 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/framework/control.class.php on line 305 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/framework/control.class.php on line 305 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/framework/helper.class.php on line 515 when visiting /flll.php?m=admin&f=index
+
+17:57:17 Undefined property: stdClass::$code in /Users/user05/work/jvc-php/system/module/view/common/footer.admin.html.php on line 21 when visiting /flll.php?m=admin&f=index

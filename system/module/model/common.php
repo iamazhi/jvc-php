@@ -187,7 +187,22 @@ class commonModel extends model
         if($this->loadModel('user')->isLogon() and stripos($method, 'ajax') !== false) return true;
 
         return false;
-    }   
+    }
+
+     /**
+     * get common html file
+     * 
+     * @param   $name
+     * @param   $depth
+     * @static
+     * @access public
+     * @return string
+     */
+    public static function get($name, $depth = 1)
+    {
+        $file = str_repeat('../', $depth) . "common/$name.html.php";
+        return $file;
+    }
 
     /**
      * Create the main menu.

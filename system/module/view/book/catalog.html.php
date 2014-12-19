@@ -1,17 +1,5 @@
-<?php
-/**
- * The create book view file of book of chanzhiEPS.
- *
- * @copyright   Copyright 2013-2013 青岛息壤网络信息有限公司 (QingDao XiRang Network Infomation Co,LTD www.xirangit.com)
- * @license     http://api.chanzhi.org/goto.php?item=license
- * @author      Tingting Dai<daitingting@xirangit.com>
- * @package     book
- * @version     $Id$
- * @link        http://www.chanzhi.org
- */
-?>
-<?php include '../../common/view/header.admin.html.php'; ?>
-<?php include '../../common/view/datepicker.html.php';?>
+<?php include commonModel::get('header.admin');?>
+<?php include commonModel::get('datepicker');?>
 <?php js::set('path', $node ? explode(',', $node->path) : array(0));?>
 <form id='ajaxForm' method='post'>
 <div class='panel'>
@@ -72,4 +60,4 @@
   </table>
 </div>
 </form>
-<?php include '../../common/view/footer.admin.html.php';?>
+<?php include commonModel::get('footer.admin');?>

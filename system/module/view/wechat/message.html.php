@@ -1,17 +1,4 @@
-<?php
-/**
- * The admin view file of wechat of chanzhiEPS.
- *
- * @copyright   Copyright 2013-2013 青岛息壤网络信息有限公司 (QingDao XiRang Network Infomation Co,LTD www.xirangit.com)
- * @license     http://api.chanzhi.org/goto.php?item=license
- * @author      Tingting Dai <daitingting@xirangit.com>
- * @package     wechat
- * @version     $Id$
- * @link        http://www.chanzhi.org
- */
-//a($this->server->query_string);
-?>
-<?php include '../../common/view/header.admin.html.php';?>
+<?php include commonModel::get('header.admin');?>
 <div class='panel'>
   <div class="panel-heading">
     <strong><?php echo '<i class="icon-comment-alt"></i> ' . $lang->wechat->message->list;?></strong>
@@ -49,4 +36,4 @@
     <tfoot><tr><td colspan='6'><?php $pager->show();?></td></tr></tfoot>
   </table>
 </div>
-<?php include '../../common/view/footer.admin.html.php';?>
+<?php include commonModel::get('footer.admin');?>

@@ -1,17 +1,5 @@
+<?php include commonModel::get('header.admin');?>
 <?php
-/**
- * The admin view file of user module of chanzhiEPS.
- *
- * @copyright   Copyright 2013-2013 青岛息壤网络信息有限公司 (QingDao XiRang Network Infomation Co,LTD www.xirangit.com)
- * @license     http://api.chanzhi.org/goto.php?item=license
- * @author      Yangyang Shi <shiyangyangwork@yahoo.cn>
- * @package     User
- * @version     $Id$
- * @link        http://www.chanzhi.org
- */
-?>
-<?php
-include '../../common/view/header.admin.html.php';
 js::set('provider', $this->get->provider);
 js::set('admin', $this->get->admin);
 ?>
@@ -94,4 +82,4 @@ js::set('admin', $this->get->admin);
   </table>
 </div>
 
-<?php include '../../common/view/footer.admin.html.php';?>
+<?php include commonModel::get('footer.admin');?>

@@ -1,5 +1,5 @@
+<?php include commonModel::get('header.lite');?>
 <?php
-include '../../common/view/header.lite.html.php';
 js::import($jsRoot . 'md5.js');
 js::set('scriptName', $_SERVER['SCRIPT_NAME']);
 js::set('random', $this->session->random);

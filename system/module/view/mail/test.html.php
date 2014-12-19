@@ -1,4 +1,4 @@
-<?php include '../../common/view/header.admin.html.php';?>
+<?php include commonModel::get('header.admin');?>
 <div class='panel'>
   <div class='panel-heading'><strong><i class='icon-envelope'></i> <?php echo $lang->mail->common;?> <i class='icon-arrow-right'></i> <?php echo $lang->mail->test; ?></strong></div>
   <div class='panel-body'>
@@ -12,4 +12,4 @@
     <iframe id='resultWin'></iframe>
   </div>
 </div>
-<?php include '../../common/view/footer.admin.html.php';?>
+<?php include commonModel::get('footer.admin');?>

@@ -1,4 +1,4 @@
-<?php include '../../common/view/header.admin.html.php';?>
+<?php include commonModel::get('header.admin');?>
 <div class='panel'>
   <div class='panel-heading'><strong><i class='icon-eidt'></i> <?php echo $lang->user->editProfile;?></strong></div>
   <div class='panel-body'>
@@ -58,5 +58,4 @@
   </div>
 </div>
 
-
-<?php include '../../common/view/footer.admin.html.php';?>
+<?php include commonModel::get('footer.admin');?>

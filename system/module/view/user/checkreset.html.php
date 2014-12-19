@@ -1,4 +1,4 @@
-<?php include '../../common/view/header.html.php';?>
+<?php include commonModel::get('header');?>
 <section id="check">
   <div class="box-radius">
     <div class="panel panel-default">
@@ -24,4 +24,4 @@
     </div>  
   </div>
 </section>
-<?php include '../../common/view/footer.html.php';?>
+<?php include commonModel::get('footer');?>

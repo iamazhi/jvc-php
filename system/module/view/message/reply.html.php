@@ -1,4 +1,4 @@
-<?php include '../../common/view/header.modal.html.php';?>
+<?php include commonModel::get('header.modal');?>
 <form id='replyForm' method='post' action="<?php echo inlink('reply', "messageID={$message->id}");?>">
   <div class='alert alert-info'><?php echo $message->content;?></div>
   <table class='table table-form'>
@@ -19,4 +19,4 @@
     <tr><td></td><td><?php echo html::submitButton();?></td></tr>
   </table>
 </form>
-<?php include '../../common/view/footer.modal.html.php';?>
+<?php include commonModel::get('footer.modal');?>

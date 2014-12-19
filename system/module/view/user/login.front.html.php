@@ -1,5 +1,5 @@
+<?php include commonModel::get('header');?>
 <?php
-include '../../common/view/header.html.php';
 js::import($jsRoot . 'md5.js');
 js::set('random', $this->session->random);
 ?>
@@ -47,4 +47,4 @@ js::set('random', $this->session->random);
     </div>
   </div>
 </div>
-<?php include '../../common/view/footer.html.php';?>
+<?php include commonModel::get('footer');?>

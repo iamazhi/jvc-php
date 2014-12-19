@@ -1,4 +1,4 @@
-<?php include '../../common/view/header.admin.html.php'; ?>
+<?php include commonModel::get('header.admin');?>
 <div class='panel'>
   <div class='panel-heading'><strong><i class='icon-refresh'></i> <?php echo $lang->forum->update;?></strong></div>
   <div class='panel-body'>
@@ -10,4 +10,4 @@
     </form>
   </div>
 </div>
-<?php include '../../common/view/footer.admin.html.php'; ?>
+<?php include commonModel::get('footer.admin');?>

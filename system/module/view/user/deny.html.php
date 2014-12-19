@@ -1,17 +1,8 @@
 <?php
-/**
- * The html template file of deny method of user module of chanzhiEPS.
- *
- * @copyright   Copyright 2013-2013 青岛息壤网络信息有限公司 (QingDao XiRang Network Infomation Co,LTD www.xirangit.com)
- * @license     http://api.chanzhi.org/goto.php?item=license
- * @author      Chunsheng Wang <chunsheng@cnezsoft.com>
- * @package     chanzhiEPS
- * @version     $Id: deny.html.php 824 2010-05-02 15:32:06Z wwccss $
- */
 $moduleName = isset($lang->$module->common)  ? $lang->$module->common:  $module;
 $methodName = isset($lang->$module->$method) ? $lang->$module->$method: $method;
-include '../../common/view/header.lite.html.php';
 ?>
+<?php include commonModel::get('header.lite');?>
 <div class='container w-200px'>
   <div class='alert alert-danger'>
     <h2><?php echo $app->user->account, ' ', $lang->user->deny;?></h2>

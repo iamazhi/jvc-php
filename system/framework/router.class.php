@@ -1047,9 +1047,9 @@ class router
     public function getModulePath($moduleName = '', $type)
     {
         if($moduleName == '') $moduleName = $this->moduleName;
-        $path = $this->getModuleRoot() . $type;
-        if($type == 'lang') $path .= DS . $this->getClientLang() . DS;
-        if($type == 'view') $path .= DS . $moduleName . DS;
+        $path = $this->getModuleRoot() . $type . DS;
+        if($type == 'lang') $path .= $this->getClientLang() . DS;
+        if($type == 'view') $path .= $moduleName . DS;
         if(!file_exists($path)) $path = $this->getModuleRoot() . 'model/ext' . DS;
         return $path;
     }

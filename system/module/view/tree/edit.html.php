@@ -1,22 +1,10 @@
 <?php
-/**
- * The edit view of tree module of chanzhiEPS.
- *
- * @copyright   Copyright 2013-2013 青岛息壤网络信息有限公司 (QingDao XiRang Network Infomation Co,LTD www.xirangit.com)
- * @license     http://api.chanzhi.org/goto.php?item=license
- * @author      Chunsheng Wang <chunsheng@cnezsoft.com>
- * @package     tree
- * @version     $Id: edit.html.php 824 2010-05-02 15:32:06Z wwccss $
- * @link        http://www.chanzhi.org
- */
-?>
-<?php
 $webRoot   = $config->webRoot;
 $jsRoot    = $webRoot . "js/";
 $themeRoot = $webRoot . "theme/";
 ?>
-<?php include '../../common/view/chosen.html.php';?>
-<?php include '../../common/view/kindeditor.html.php';?>
+<?php include commonModel::get('chosen');?>
+<?php include commonModel::get('kindeditor');?>
 <?php js::set('type', $category->type);?>
 <?php js::set('link', $lang->category->link);?>
 <form method='post' class='form-horizontal' id='editForm' action="<?php echo inlink('edit', 'categoryID='.$category->id);?>">

@@ -1,18 +1,6 @@
-<?php
-/**
- * The edit view file of reply module of chanzhiEPS.
- *
- * @copyright   Copyright 2013-2013 青岛息壤网络信息有限公司 (QingDao XiRang Network Infomation Co,LTD www.xirangit.com)
- * @license     http://api.chanzhi.org/goto.php?item=license
- * @author      Chunsheng Wang <chunsheng@cnezsoft.com>
- * @package     reply
- * @version     $Id$
- * @link        http://www.chanzhi.org
- */
-?>
 <?php if($this->thread->hasManagePriv($this->app->user->account, $board->owners)) $config->thread->editor->editreply['tools'] = 'full'; ?>
-<?php include '../../common/view/header.html.php';?>
-<?php include '../../common/view/kindeditor.html.php';?>
+<?php include commonModel::get('header');?>
+<?php include commonModel::get('kindeditor');?>
 <?php $common->printPositionBar($board, $thread);?>
 <form method='post' id='ajaxForm' enctype='multipart/form-data'>
 <table class='table table-form'>
@@ -40,4 +28,4 @@
     <td colspan='2' align='center'><?php echo html::submitButton('', 'btn btn-primary', 'onclick="return checkGarbage(\'content\')" tabindex=2' ) . html::backButton();?></td></tr>
 </table>
 </form>
-<?php include '../../common/view/footer.html.php';?>
+<?php include commonModel::get('footer');?>

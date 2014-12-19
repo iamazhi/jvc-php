@@ -1,4 +1,4 @@
-<?php include '../../common/view/header.html.php';?>
+<?php include commonModel::get('header');?>
 <div class="page-user-control">
   <div class="row">
     <?php include './side.html.php';?>
@@ -82,4 +82,4 @@
     </div>
   </div>
 </div>
-<?php include '../../common/view/footer.html.php';?>
+<?php include commonModel::get('footer');?>

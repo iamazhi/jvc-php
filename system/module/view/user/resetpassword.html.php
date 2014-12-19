@@ -1,4 +1,4 @@
-<?php include '../../common/view/header.html.php';?>
+<?php include commonModel::get('header');?>
 <div class='panel panel-body'>
     <div class='panel panel-pure' id='reset'>
       <div class='panel-heading'><strong><?php echo $lang->user->recoverPassword;?></strong></div>
@@ -12,4 +12,4 @@
       </div>
     </div>  
 </div>
-<?php include '../../common/view/footer.html.php';?>
+<?php include commonModel::get('footer');?>

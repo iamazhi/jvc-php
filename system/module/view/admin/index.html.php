@@ -1,4 +1,4 @@
-<?php include '../common/header.admin.html.php';?>
+<?php include commonModel::get('header.admin');?>
 <div class='container' id='shortcutBox'>
 
   <?php if(strpos($this->server->php_self, '/admin.php') !== false && empty($this->config->global->ignoreAdminEntry)):?>
@@ -52,4 +52,4 @@
     </div>
   </div>
 </div>
-<?php include '../common/footer.admin.html.php';?>
+<?php include commonModel::get('footer.admin');?>
