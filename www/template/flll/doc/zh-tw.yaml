@@ -1,0 +1,10 @@
+name:默認模板
+parser:default
+code:default
+author:azhi
+desc:這是福利来啦默認模板
+version:2.5
+chanzhiVersion:2.5
+charge:free
+themes:
+   default:默認

@@ -1,0 +1,10 @@
+name:Default
+parser:default
+code:default
+author:azhi
+desc:This is the default template of fulilaila.
+version:2.5
+chanzhiVersion:2.5
+charge:free
+themes:
+   default:Default
