@@ -559,8 +559,8 @@ class control
         }
 
         /* Set the pathes and files to included. */
-        $modulePath        = $this->app->getModulePath($moduleName);
-        $moduleControlFile = $modulePath . 'control.php';
+        $modulePath        = $this->app->getModulePath($moduleName, 'control');
+        $moduleControlFile = $modulePath . "$moduleName.php";
         $actionExtPath     = $this->app->getModuleExtPath($moduleName, 'control');
 
         $commonActionExtFile = $actionExtPath['common'] . strtolower($methodName) . '.php';
@@ -573,7 +573,7 @@ class control
         $currentPWD = getcwd();
         chdir(dirname($file2Included));
         if($moduleName != $this->moduleName) helper::import($file2Included);
-        
+
         /* Set the name of the class to be called. */
         $className = class_exists("my$moduleName") ? "my$moduleName" : $moduleName;
         if(!class_exists($className)) $this->app->triggerError(" The class $className not found", __FILE__, __LINE__, $exit = true);

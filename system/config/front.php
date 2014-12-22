@@ -13,7 +13,11 @@
 $config->rights = new stdclass();
 
 /* For guest users. */
-$config->rights->guest['index']['index'] = 'index';
+$config->rights->guest['index']['index']    = 'index';
+$config->rights->guest['index']['good']     = 'good';
+$config->rights->guest['index']['wallet']   = 'wallet';
+$config->rights->guest['index']['message']  = 'message';
+$config->rights->guest['index']['download'] = 'download';
 
 $config->rights->guest['article']['index']  = 'index';
 $config->rights->guest['article']['browse'] = 'browse';

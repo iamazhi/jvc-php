@@ -330,17 +330,38 @@ class commonModel extends model
             echo html::a(helper::createLink('user', 'control'), $app->lang->dashboard);
             echo "<span id='msgBox' class='hiding'></span>";
             echo html::a(helper::createLink('user', 'logout'),  $app->lang->logout);
-        }    
+        }
         else
         {
             echo html::a(helper::createLink('user', 'login'), $app->lang->login);
             echo html::a(helper::createLink('user', 'register'), $app->lang->register);
-        }    
+        }
+    }
+
+    // 个性化用户按钮
+    public static function printUserNav()
+    {
+        if(!commonModel::isAvailable('user')) return '';
+
+        global $app;
+        if($app->session->user->account != 'guest')
+        {
+            printf('<span class="login-msg">' . $app->lang->welcome . '</span>', $app->session->user->realname);
+            echo html::a(helper::createLink('user', 'control'), $app->lang->dashboard);
+            echo "<span id='msgBox' class='hiding'></span>";
+            echo html::a(helper::createLink('user', 'logout'),  $app->lang->logout);
+        }
+        else
+        {
+            echo '<i class="fa fa-user"></i>欢迎你，请 ';
+            echo html::a(helper::createLink('user', 'login'), $app->lang->login) . "/";
+            echo html::a(helper::createLink('user', 'register'), $app->lang->register);
+        }
     }
 
     /**
      * Print the nav bar.
-     * 
+     *
      * @static
      * @access public
      * @return void
@@ -381,7 +402,7 @@ class commonModel extends model
         if(method_exists('commonModel', $funcName)) echo $this->$funcName($module, $object, $misc);
         echo '</ul>';
     }
-    
+
     /**
      * Print the link contains orderBy field.
      *
@@ -708,7 +729,7 @@ class commonModel extends model
 
         return $link;
     }
- 
+
     /**
      * Verfy administrator through ok file.
      * 
@@ -725,7 +746,7 @@ class commonModel extends model
 
         return array('result' => 'success');
     }
-   
+
     /**
      * Load category and page alias. 
      *

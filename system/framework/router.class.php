@@ -836,7 +836,7 @@ class router
         if($this->config->requestType == 'PATH_INFO')
         {
             $this->parsePathInfo();
-            $this->URI = seo::parseURI($this->URI);
+            //$this->URI = seo::parseURI($this->URI);
             $this->setRouteByPathInfo();
         }
         elseif($this->config->requestType == 'GET')
@@ -895,10 +895,11 @@ class router
      */
     private function getPathInfo($varName)
     {
-        $value = @getenv($varName);
+       // $value = @getenv($varName);
+        $value = $_SERVER['REQUEST_URI'];
         if(strpos($value, $_SERVER['SCRIPT_NAME']) !== false) $value = str_replace($_SERVER['SCRIPT_NAME'], '', $value);
-        if(isset($_SERVER[$varName])) $value = $_SERVER[$varName];
-        if(strpos($value, '?') === false) return trim($value, '/');
+        //if(isset($_SERVER[$varName])) $value = $_SERVER[$varName];
+        //if(strpos($value, '?') === false) return trim($value, '/');
         $value = parse_url($value);
         return trim($value['path'], '/');
     }
@@ -1098,12 +1099,12 @@ class router
         if(!empty($this->URI))
         {
             /* There's the request seperator, split the URI by it. */
-            if(strpos($this->URI, '-') !== false)
+            if(strpos($this->URI, $this->config->requestFix) !== false)
             {
-                $items = explode('-', $this->URI);
+                $items = explode($this->config->requestFix, $this->URI);
                 $this->setModuleName($items[0]);
                 $this->setMethodName($items[1]);
-            }    
+            }
             /* No reqeust seperator, use the default method name. */
             else
             {

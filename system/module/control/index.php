@@ -1,14 +1,4 @@
 <?php
-/**
- * The control file of index module of chanzhiEPS.
- *
- * @copyright   Copyright 2013-2013 青岛息壤网络信息有限公司 (QingDao XiRang Network Infomation Co,LTD www.xirangit.com)
- * @license     http://api.chanzhi.org/goto.php?item=license
- * @author      Chunsheng Wang <chunsheng@cnezsoft.com>
- * @package     index
- * @version     $Id$
- * @link        http://www.chanzhi.org
- */
 class index extends control
 {
     /**
@@ -36,6 +26,30 @@ class index extends control
             $this->locate($this->createLink('blog', 'index', $param));
         }
 
+        $this->view->title = $this->config->site->indexKeywords;
+        $this->display();
+    }
+
+    public function good()
+    {
+        $this->view->title = $this->config->site->indexKeywords;
+        $this->display();
+    }
+
+    public function wallet()
+    {
+        $this->view->title = $this->config->site->indexKeywords;
+        $this->display();
+    }
+
+    public function message()
+    {
+        $this->view->title = $this->config->site->indexKeywords;
+        $this->display();
+    }
+
+    public function download($categoryID = 0, $pageID = 1)
+    {
         $this->view->title = $this->config->site->indexKeywords;
         $this->display();
     }

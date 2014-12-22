@@ -1,18 +1,17 @@
 <?php if($extView = $this->getExtViewFile(__FILE__)){include $extView; return helper::cd();}?>
 <?php include TPL_ROOT . 'common/header.lite.html.php';?>
-<div class='page-container'>
-  <?php $this->block->printRegion($layouts, 'all', 'top');?>
-  <?php $topNavs = $this->loadModel('nav')->getNavs('top');?>
-  <nav id='navbar' class='navbar' role='navigation'>
-    <div class='navbar-header'>
-      <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#navbarCollapse'>
-        <span class='icon-bar'></span>
-        <span class='icon-bar'></span>
-        <span class='icon-bar'></span>
-      </button>
-      <a class='navbar-brand' href='/'><i class='icon-home'></i></a>
-    </div>
-    <div class='collapse navbar-collapse' id='navbarCollapse'>
+
+<?php $this->block->printRegion($layouts, 'all', 'top');?>
+<?php $topNavs = $this->loadModel('nav')->getNavs('top');?>
+<div class='header'>
+  <div class='container'>
+    <div class="comp-name">均豪</div>
+    <div class="logo">
+      <?php $logo = json_decode($this->config->site->logo);?>
+      <?php echo html::image($logo->webPath, "class='logo' title='{$this->config->company->name}'");?>
+    </div><!--E .logo-->
+
+    <div class='navbox'>
       <ul class='nav navbar-nav'>
         <?php foreach($topNavs as $nav1):?>
           <?php if(empty($nav1->children)):?>
@@ -41,7 +40,9 @@
         <?php endforeach;?><!-- end nav1 -->
       </ul>
     </div>
-  </nav>
+    <div class="userbox">
+      <?php $this->loadModel('common')->printUserNav();?>                                                                                                                                                       
+    </div>
 
-  <div class='page-wrapper'>
-    <div class='page-content'>
+  </div> <!-- container -->
+</div> <!-- header -->
