@@ -70,7 +70,7 @@ class user extends control
 
     /**
      * Login.
-     * 
+     *
      * @param string $referer 
      * @access public
      * @return void
@@ -160,7 +160,7 @@ class user extends control
 
     /**
      * The user control panel of the front
-     * 
+     *
      * @access public
      * @return void
      */
@@ -172,7 +172,7 @@ class user extends control
 
     /**
      * View current user's profile.
-     * 
+     *
      * @access public
      * @return void
      */

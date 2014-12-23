@@ -19,6 +19,13 @@ $config->rights->guest['index']['wallet']   = 'wallet';
 $config->rights->guest['index']['message']  = 'message';
 $config->rights->guest['index']['download'] = 'download';
 
+$config->rights->guest['api']['rest']   = 'rest';
+$config->rights->guest['api']['login']  = 'login';
+$config->rights->guest['api']['get']    = 'get';
+$config->rights->guest['api']['post']   = 'post';
+$config->rights->guest['api']['put']    = 'put';
+$config->rights->guest['api']['delete'] = 'delete';
+
 $config->rights->guest['article']['index']  = 'index';
 $config->rights->guest['article']['browse'] = 'browse';
 $config->rights->guest['article']['view']   = 'view';

@@ -632,7 +632,7 @@ class control
 
                 if(isset($data['result']) and $data['result'] == 'fail')
                 {
-                   if(!empty($data['message'])) 
+                   if(!empty($data['message']))
                    {
                        $message = json_decode(json_encode((array)$data['message']));
                        foreach($message as $item => $errors)

@@ -836,7 +836,7 @@ class router
         if($this->config->requestType == 'PATH_INFO')
         {
             $this->parsePathInfo();
-            //$this->URI = seo::parseURI($this->URI);
+            $this->URI = seo::parseURI($this->URI);
             $this->setRouteByPathInfo();
         }
         elseif($this->config->requestType == 'GET')
@@ -895,12 +895,16 @@ class router
      */
     private function getPathInfo($varName)
     {
-       // $value = @getenv($varName);
-        $value = $_SERVER['REQUEST_URI'];
+        // $value = $_SERVER['REQUEST_URI'];
+        // if(strpos($value, $_SERVER['SCRIPT_NAME']) !== false) $value = str_replace($_SERVER['SCRIPT_NAME'], '', $value);
+        // $value = parse_url($value);
+
+        $value = @getenv($varName);
         if(strpos($value, $_SERVER['SCRIPT_NAME']) !== false) $value = str_replace($_SERVER['SCRIPT_NAME'], '', $value);
-        //if(isset($_SERVER[$varName])) $value = $_SERVER[$varName];
-        //if(strpos($value, '?') === false) return trim($value, '/');
+        if(isset($_SERVER[$varName])) $value = $_SERVER[$varName];
+        if(strpos($value, '?') === false) return trim($value, '/');
         $value = parse_url($value);
+
         return trim($value['path'], '/');
     }
 

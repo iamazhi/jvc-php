@@ -4,9 +4,10 @@ $('#submit').click(function()
 {
     var password = $('#password').val();
     var reg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
-    if(!reg.test($('#account').val())) password = md5(md5(md5($('#password').val()) + $('#account').val()) + v.random);
+    if(!reg.test($('#account').val())) password = $('#password').val();
 
-    loginURL = createLink('user', 'login');
+    $resources = $('input[name=role]:checked').val() + '*login';
+    loginURL = createLink('api', 'rest', 'resources=' + $resources);
     $.ajax(
     {
         type: "POST",
