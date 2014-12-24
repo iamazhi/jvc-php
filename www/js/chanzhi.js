@@ -5,6 +5,16 @@
 
 $.extend(
 {
+    // added by azhi
+    loadHtmlTpl: function(module, method)
+    {
+      if(!v.tpldata) return;
+      $.get('htmltpl/' + module + '/' + method + '.html', function(template) {
+        var rendered = Mustache.render(template, v.tpldata);
+        $('#target').html(rendered);
+      });
+    },
+
     setAjaxForm: function(formID, callback)
     {
         if($(document).data('setAjaxForm:' + formID)) return;

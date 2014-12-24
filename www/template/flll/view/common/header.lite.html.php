@@ -33,6 +33,7 @@ $themeRoot = $webRoot . "template/flll/theme/";
       js::import($jsRoot . 'bootstrap/min.js');
       js::import($jsRoot . 'chanzhi.js');
       js::import($jsRoot . 'jquery/treeview/min.js');
+      js::import($jsRoot . 'jquery/mustache/min.js');
       js::import($jsRoot . 'my.js');
 
       css::import($webRoot . 'bootstrap/css/min.css');
@@ -94,5 +95,6 @@ $this->block->printRegion($layouts, 'all', 'header');
 
 if(isset($this->config->site->basestyle)) css::internal($this->config->site->basestyle);
 ?>
+<?php if($tpldata) js::set('tpldata', $tpldata);?>
 </head>
 <body>

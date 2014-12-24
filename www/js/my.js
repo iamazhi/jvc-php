@@ -1,9 +1,11 @@
 /* Mark module and method of this page by add css class to body tag */
 $('html').addClass('m-' + config['currentModule'] + ' m-' + config['currentModule'] + '-' + config['currentMethod']);
-$(document).ready(function() 
+$(document).ready(function()
 {
+
     setRequiredFields();
 
+    $.loadHtmlTpl(config['currentModule'], config['currentMethod']); //added by azhi
     $.setAjaxForm('#ajaxForm');
     $.setAjaxDeleter('.deleter');
     $.setReloadDeleter('.reloadDeleter');

@@ -1,9 +1,9 @@
 <?php
 class api extends control
 {
-    private $host = "http://192.168.2.29:8080/";
+    private $host = "http://192.168.2.29:8080/v1/";
     //private $host = "http://local.jvc.com/";
-    //private $host = "http://192.168.1.16:8080/";
+    //private $host = "http://192.168.1.16:8080/v1/";
     public function simulator()
     {
         return print json_encode(array('result'=>'success', 'message'=> '登录成功'));
