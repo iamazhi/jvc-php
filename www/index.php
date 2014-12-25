@@ -22,7 +22,7 @@ define('RUN_MODE', 'front');
 include 'loader.php';
 
 /* Instance the app and run it. */
-$app = router::createApp('chanzhi', $systemRoot);
+$app = router::createApp('flll', $systemRoot);
 $config = $app->config;
 
 /* Check the reqeust is getconfig or not. Check installed or not. */

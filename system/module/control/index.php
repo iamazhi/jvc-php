@@ -29,28 +29,4 @@ class index extends control
         $this->view->title = $this->config->site->indexKeywords;
         $this->display();
     }
-
-    public function good()
-    {
-        $this->view->title = $this->config->site->indexKeywords;
-        $this->display();
-    }
-
-    public function wallet()
-    {
-        $this->view->title = $this->config->site->indexKeywords;
-        $this->display();
-    }
-
-    public function message()
-    {
-        $this->view->title = $this->config->site->indexKeywords;
-        $this->display();
-    }
-
-    public function download($categoryID = 0, $pageID = 1)
-    {
-        $this->view->title = $this->config->site->indexKeywords;
-        $this->display();
-    }
 }

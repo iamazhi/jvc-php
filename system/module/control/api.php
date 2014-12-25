@@ -1,9 +1,9 @@
 <?php
 class api extends control
 {
-    private $host = "http://192.168.2.29:8080/v1/";
+    //private $host = "http://192.168.2.29:8080/v1/";
     //private $host = "http://local.jvc.com/";
-    //private $host = "http://192.168.1.16:8080/v1/";
+    private $host = "http://192.168.1.16:8080/v1/";
     public function simulator()
     {
         return print json_encode(array('result'=>'success', 'message'=> '登录成功'));
@@ -16,8 +16,17 @@ class api extends control
         $resources = str_replace('*', '/', $resources);
         if($resources == 'company/login' || $resources == 'employee/login') $result = $this->login($resources, $type);
 
+        if($type == 'POST') $result = $this->post($this->host . $resources);
+
         if(empty($result)) $result = array('result' => 'fail', 'message' => '与服务端通信失败');
         $this->send($result);
+    }
+
+    public function post($url)
+    {
+        $result = $this->curl($url, 'POST', $_POST);
+        $result = @json_decode($result, true);
+        return $result;
     }
 
     private function login($resources, $type)
@@ -28,6 +37,7 @@ class api extends control
         $option = array('account' => $account, 'password' => $password);
         $url = $this->host . $resources;
 
+//        $result = "{ \"data\": { \"account\": \"ashome\", \"address\": \"福建省厦门市思明区民族路47号海峡电子商务创业园3号电梯5楼\", \"business_no\": \"350203100007729\", \"contacts\": \"emma\", \"contacts_phone\": \"15634542347\", \"id\": \"2\", \"id_str\": \"ttcaca\", \"is_valid\": \"1\", \"name\": \"厦门市提提喀喀电子商务有限公司\", \"name_short\": \"提提擦擦\", \"name_word\": \"名称单字\", \"password\": \"54ab485339279f709fd37d0da36259b0\", \"principal\": \"王卿\", \"principal_phone\": \"15634234567\", \"remark\": \"备注\" }, \"message\": \"查询数据成功!\", \"result\": \"success\" }";
         $result = $this->curl($url, $type, $option);
         $result = @json_decode($result, true);
 
@@ -41,7 +51,7 @@ class api extends control
         $this->session->set('user', $user);
         $this->app->user = $this->session->user;
 
-        $result['locate'] = $this->createLink('user', 'control');
+        $result['locate'] = $this->createLink("flll{$user->role}", 'control');
         return $result;
     }
 

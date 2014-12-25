@@ -1,30 +1,9 @@
 <?php
-/**
- * The config items for rights for front pages..
- *
- * @copyright   Copyright 2013-2013 青岛息壤网络信息有限公司 (QingDao XiRang Network Infomation Co,LTD www.xirangit.com)
- * @license     LGPL
- * @author      Chunsheng Wang <chunsheng@cnezsoft.com>
- * @package     chanzhiEPS
- * @version     $Id$
- * @link        http://www.chanzhi.org
- */
 /* Init the rights. */
 $config->rights = new stdclass();
 
 /* For guest users. */
 $config->rights->guest['index']['index']    = 'index';
-$config->rights->guest['index']['good']     = 'good';
-$config->rights->guest['index']['wallet']   = 'wallet';
-$config->rights->guest['index']['message']  = 'message';
-$config->rights->guest['index']['download'] = 'download';
-
-$config->rights->guest['api']['rest']   = 'rest';
-$config->rights->guest['api']['login']  = 'login';
-$config->rights->guest['api']['get']    = 'get';
-$config->rights->guest['api']['post']   = 'post';
-$config->rights->guest['api']['put']    = 'put';
-$config->rights->guest['api']['delete'] = 'delete';
 
 $config->rights->guest['article']['index']  = 'index';
 $config->rights->guest['article']['browse'] = 'browse';
@@ -108,3 +87,21 @@ $config->rights->member['file']['ajaxupload'] = 'ajaxupload';
 
 $config->rights->member['message']['view']        = 'view';
 $config->rights->member['message']['batchdelete'] = 'batchdelete';
+
+/* added by azhi. */
+/* For guest flll.*/
+$config->rights->guest['flll']['index']    = 'index';
+$config->rights->guest['flll']['good']     = 'good';
+$config->rights->guest['flll']['wallet']   = 'wallet';
+$config->rights->guest['flll']['message']  = 'message';
+$config->rights->guest['flll']['download'] = 'download';
+
+$config->rights->guest['api']['rest']   = 'rest';
+$config->rights->guest['api']['login']  = 'login';
+$config->rights->guest['api']['get']    = 'get';
+$config->rights->guest['api']['post']   = 'post';
+$config->rights->guest['api']['put']    = 'put';
+$config->rights->guest['api']['delete'] = 'delete';
+
+$config->rights->guest['flllcompany']['control']  = 'control';
+$config->rights->guest['flllemployee']['control'] = 'control';

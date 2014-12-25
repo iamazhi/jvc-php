@@ -346,9 +346,9 @@ class commonModel extends model
         global $app;
         if($app->session->user->account != 'guest')
         {
-            printf('<span class="login-msg">' . $app->lang->welcome . '</span>', $app->session->user->realname);
-            echo html::a(helper::createLink('user', 'control'), $app->lang->dashboard);
-            echo "<span id='msgBox' class='hiding'></span>";
+            $name = $app->session->user->role == 'company' ? $app->session->user->name_short : $app->session->user->name;
+            echo html::a(helper::createLink('flll' . $app->session->user->role, 'control'), $name);
+            echo "<span id='msgBox' class='hiding'></span> / ";
             echo html::a(helper::createLink('user', 'logout'),  $app->lang->logout);
         }
         else
