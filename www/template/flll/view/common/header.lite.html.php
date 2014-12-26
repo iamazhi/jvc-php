@@ -95,6 +95,5 @@ $this->block->printRegion($layouts, 'all', 'header');
 
 if(isset($this->config->site->basestyle)) css::internal($this->config->site->basestyle);
 ?>
-<?php if($tpldata) js::set('tpldata', $tpldata);?>
 </head>
 <body>

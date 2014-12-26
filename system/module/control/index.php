@@ -14,12 +14,14 @@ class index extends control
 
     /**
      * The index page of whole site.
-     * 
+     *
      * @access public
      * @return void
      */
     public function index($categoryID = 0, $pageID = 1)
     {
+        $this->locate($this->createLink('flll', 'index'));
+
         if(isset($this->config->site->type) and $this->config->site->type == 'blog')
         {
             $param = ($categoryID == 0 and $pageID == 1) ? '' : "categoryID={$categoryID}&pageID={$pageID}";

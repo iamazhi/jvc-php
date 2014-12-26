@@ -1,25 +1,39 @@
 <?php
 class api extends control
 {
-    //private $host = "http://192.168.2.29:8080/v1/";
-    //private $host = "http://local.jvc.com/";
-    private $host = "http://192.168.1.16:8080/v1/";
-    public function simulator()
+    public function __construct()
     {
-        return print json_encode(array('result'=>'success', 'message'=> '登录成功'));
+        parent::__construct();
+        $this->host = $this->config->api->host . $this->config->api->version . '/';
+    }
+
+    public function test()
+    {
+        $url = "http://192.168.1.16:8080/v1/company/2";
+        $data = Array('name' => '公司名字', 'nameShort' => 'asf', 'business_no' => '12312312', 'principal' => '负责人');
+        $result = $this->curl($url, 'POST', $data);
+//        return print json_encode(array('result'=>'success', 'message'=> '登录成功'));
         //return print json_encode(array('result'=>'fail', 'message' => $this->lang->user->loginFailed));
     }
 
     public function rest($resources, $type = 'GET')
     {
-        //$locate = $this->post->referer ? $this->post->referer : $this->createLink($default->module, $default->method);
         $resources = str_replace('*', '/', $resources);
         if($resources == 'company/login' || $resources == 'employee/login') $result = $this->login($resources, $type);
 
+        if($type == 'GET')  $result = $this->get($this->host . $resources);
         if($type == 'POST') $result = $this->post($this->host . $resources);
 
         if(empty($result)) $result = array('result' => 'fail', 'message' => '与服务端通信失败');
+        //echo json_encode($result);
         $this->send($result);
+    }
+
+    public function get($url)
+    {
+        $result = $this->curl($url, 'GET', $_POST);
+        $result = @json_decode($result, true);
+        return $result;
     }
 
     public function post($url)
@@ -75,7 +89,10 @@ class api extends control
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1); // 获取的信息以文件流的形式返回
         curl_setopt($curl, CURLOPT_CUSTOMREQUEST, $type);
 
-        if($type != 'GET' && !empty($option)) curl_setopt ($curl, CURLOPT_POSTFIELDS, $option);
+        if($type != 'GET' && !empty($option))
+        {
+            curl_setopt($curl, CURLOPT_POSTFIELDS, $option);
+        }
 
         $result = curl_exec($curl); // 执行操作
         return $result;

@@ -15,7 +15,11 @@ class flllcompany extends control
         }
 
         if($this->app->user->account == 'guest') $this->locate(inlink('login'));
-        $this->view->tpldata = $this->app->user;
+        $this->display();
+    }
+
+    public function employees()
+    {
         $this->display();
     }
 }

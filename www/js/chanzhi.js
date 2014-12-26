@@ -8,12 +8,40 @@ $.extend(
     // added by azhi
     loadHtmlTpl: function(module, method)
     {
-      if(!v.tpldata) return;
-      $.get('htmltpl/' + module + '/' + method + '.html', function(template) {
-        var rendered = Mustache.render(template, v.tpldata);
-        $('#target').html(rendered);
-      });
-    },
+        $("[data-tpl]").each(function(){
+            var $container = $(this);
+            var $tpl = $container.data('tpl');
+            var $query = $container.data('url');
+            var $data = {};
+
+            if($query){
+              $query = $query.replace('/', '*');
+              var $url = '/api-rest-' + $query;
+              $.ajax({
+                url: $url,
+                async: false,
+                success: function(data){
+                  data = JSON.parse(data);
+                  if(data.result == 'success'){
+                    $data = data.data;
+                  }
+                }
+              });
+            }
+
+            var $tplFile = 'htmltpl/' + module + '/' + method + '.html';
+            if($tpl != 'default') $tplFile = 'htmltpl/' + $tpl;
+
+            $.ajax({
+              url: $tplFile,
+              async: false,
+              success: function(file){
+                var output = Mustache.render(file, $data);
+                $container.html(output);
+              }
+            });
+        })
+      },
 
     setAjaxForm: function(formID, callback)
     {

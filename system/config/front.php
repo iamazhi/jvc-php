@@ -96,6 +96,7 @@ $config->rights->guest['flll']['wallet']   = 'wallet';
 $config->rights->guest['flll']['message']  = 'message';
 $config->rights->guest['flll']['download'] = 'download';
 
+$config->rights->guest['api']['test']   = 'test';
 $config->rights->guest['api']['rest']   = 'rest';
 $config->rights->guest['api']['login']  = 'login';
 $config->rights->guest['api']['get']    = 'get';
@@ -103,5 +104,6 @@ $config->rights->guest['api']['post']   = 'post';
 $config->rights->guest['api']['put']    = 'put';
 $config->rights->guest['api']['delete'] = 'delete';
 
-$config->rights->guest['flllcompany']['control']  = 'control';
+$config->rights->guest['flllcompany']['control']   = 'control';
+$config->rights->guest['flllcompany']['employees'] = 'employees';
 $config->rights->guest['flllemployee']['control'] = 'control';

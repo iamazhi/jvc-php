@@ -48,7 +48,7 @@ $config->default = new stdclass();
 $config->default->view   = 'html';             // Default view.
 $config->default->lang   = 'zh-cn';            // Default language.
 $config->default->theme  = 'default';          // Default theme.
-$config->default->module = 'index';            // Default module.
+$config->default->module = 'flll';             // Default module.
 $config->default->method = 'index';            // Default metho.d
 
 /* Upload settings. */
@@ -73,6 +73,11 @@ $config->db->driver     = 'mysql';             // The driver of pdo, only mysql 
 $config->db->encoding   = 'UTF8';              // The encoding of the database.
 $config->db->strictMode = false;               // Turn off the strict mode.
 $config->db->prefix     = 'eps_';              // The prefix of the table name.
+
+/* Database settings. */
+$config->api = new stdclass();
+$config->api->host    = 'http://192.168.1.16:8080/';
+$config->api->version = 'v1';
 
 /* Include my.php, domain.php and front or admin.php. */
 $configRoot   = dirname(__FILE__) . DS;
