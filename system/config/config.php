@@ -48,7 +48,7 @@ $config->default = new stdclass();
 $config->default->view   = 'html';             // Default view.
 $config->default->lang   = 'zh-cn';            // Default language.
 $config->default->theme  = 'default';          // Default theme.
-$config->default->module = 'flll';             // Default module.
+$config->default->module = 'index';             // Default module.
 $config->default->method = 'index';            // Default metho.d
 
 /* Upload settings. */

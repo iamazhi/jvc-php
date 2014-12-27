@@ -9,7 +9,7 @@ class api extends control
 
     public function test()
     {
-        $url = "http://192.168.1.16:8080/v1/company/2";
+        $url = "http://192.168.1.16:8080/v1/companies/2";
         $data = Array('name' => '公司名字', 'nameShort' => 'asf', 'business_no' => '12312312', 'principal' => '负责人');
         $result = $this->curl($url, 'POST', $data);
 //        return print json_encode(array('result'=>'success', 'message'=> '登录成功'));
@@ -19,10 +19,16 @@ class api extends control
     public function rest($resources, $type = 'GET')
     {
         $resources = str_replace('*', '/', $resources);
-        if($resources == 'company/login' || $resources == 'employee/login') $result = $this->login($resources, $type);
-
-        if($type == 'GET')  $result = $this->get($this->host . $resources);
-        if($type == 'POST') $result = $this->post($this->host . $resources);
+        if($resources == 'companies/login' || $resources == 'employee/login') 
+        {
+            $result = $this->login($resources, $type);
+        }elseif($type == 'GET') 
+        {
+            $result = $this->get($this->host . $resources);
+        }elseif($type == 'POST') 
+        {
+            $result = $this->post($this->host . $resources);
+        }
 
         if(empty($result)) $result = array('result' => 'fail', 'message' => '与服务端通信失败');
         //echo json_encode($result);
@@ -60,7 +66,7 @@ class api extends control
 
         $user = (object)$result['data'];
         if(RUN_MODE == 'front') $user->rights = $this->loadModel('user')->authorize($user);
-        if($resources == 'company/login')  $user->role = 'company';
+        if($resources == 'companies/login')  $user->role = 'company';
         if($resources == 'employee/login') $user->role = 'employee';
         $this->session->set('user', $user);
         $this->app->user = $this->session->user;

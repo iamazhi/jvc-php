@@ -37,7 +37,7 @@ js::set('random', $this->session->random);
                 <input type="radio" name="role" value="employee"> 个人登录
               </label>
               <label class="radio-inline">
-                <input type="radio" name="role" value="company" checked> 公司登录
+                <input type="radio" name="role" value="companies" checked> 公司登录
               </label>
             </div>
           </div>
