@@ -1,3 +1,4 @@
 /system/tmp
+/system/tmp/log
 .*
 /www/data/

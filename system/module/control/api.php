@@ -19,7 +19,7 @@ class api extends control
     public function rest($resources, $type = 'GET')
     {
         $resources = str_replace('*', '/', $resources);
-        if($resources == 'companies/login' || $resources == 'employee/login') 
+        if($resources == 'companies/login' || $resources == 'employees/login') 
         {
             $result = $this->login($resources, $type);
         }elseif($type == 'GET') 
@@ -37,7 +37,7 @@ class api extends control
 
     public function get($url)
     {
-        $result = $this->curl($url, 'GET', $_POST);
+        $result = $this->curl($url, 'GET');
         $result = @json_decode($result, true);
         return $result;
     }
@@ -67,7 +67,7 @@ class api extends control
         $user = (object)$result['data'];
         if(RUN_MODE == 'front') $user->rights = $this->loadModel('user')->authorize($user);
         if($resources == 'companies/login')  $user->role = 'company';
-        if($resources == 'employee/login') $user->role = 'employee';
+        if($resources == 'employees/login') $user->role = 'employee';
         $this->session->set('user', $user);
         $this->app->user = $this->session->user;
 
