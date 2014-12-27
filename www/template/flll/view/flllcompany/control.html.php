@@ -2,7 +2,7 @@
 <?php include "./menu.html.php";?>
 <div class="right-con">
     <div class="block">
-      <form class="form-horizontal" method='post' data-tpl='default' data-url='companies/2'>
+      <form class="form-horizontal" method='post' data-tpl='default' data-url='companies/1'>
       </form>
     </div><!--E .block-->
 </div><!--E .right-con-->

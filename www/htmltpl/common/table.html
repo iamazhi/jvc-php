@@ -1,39 +1,41 @@
-<div class="panel panel-default">
-  <!-- Default panel contents -->
-  <div class="panel-heading">Panel heading</div>
-  <div class="panel-body">
-    <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+{{#search}} 
+<div class="ui-columns-search"> 
+<input class="ui-table-search" placeholder="Search" type="text" name="query" data-columns-search="true" value="{{query}}" /> 
+</div> 
+{{/search}}
+{{#table}} 
+  <div class="ui-columns-table" data-columns-table="true"> 
+    <table class="table table-striped table-bordered table-hover table-full-width dataTable"> 
+      <thead>
+      {{#headers}} 
+      {{#sortable}} <th class="ui-table-sortable" data-columns-sortby="{{key}}"> {{header}}</th> {{/sortable}} 
+      {{#notSortable}} <th class="">{{header}}</th> {{/notSortable}} 
+      {{#sortedUp}} <th class="ui-table-sort-up ui-table-sortable" data-columns-sortby="{{key}}">{{header}} <span class="ui-arrow">&#x25B2;</span></th> {{/sortedUp}} 
+      {{#sortedDown}} <th class="ui-table-sort-down ui-table-sortable" data-columns-sortby="{{key}}">{{header}} <span class="ui-arrow">&#x25BC;</span></th> {{/sortedDown}} 
+      {{/headers}} 
+      </thead> 
+      <tbody> {{#rows}} {{{.}}} {{/rows}} </tbody> 
+    </table> 
   </div>
-
-  <!-- Table -->
-  <table class="table">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Username</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr>
-    </tbody>
-  </table>
+{{/table}} 
+<div class="ui-table-footer row" data-columns-footer="true"> 
+  <div class="col-md-1 margin-top"><i class="fa fa-refresh fontsize"></i></div> 
+  <div class="col-md-8"> 
+    <div class="paging_bootstrap text-right"> 
+      <ul id="paginator-example-1" class="pagination"> 
+         <li><a href="##" title="Go to first page">&lt;&lt;</a></li> 
+         {{#prevPageExists}}<li class="ui-table-control-prev" data-columns-page="{{prevPage}}"><a href="##" title="Go to previous page">&lt;</a></li>{{/prevPageExists}} 
+         {{^prevPageExists}}<li class="disabled" data-columns-page="{{prevPage}}"><a href="##" title="Go to previous page">&lt;</a></li>{{/prevPageExists}} 
+         <li><input type="text" class="col-md-1 col-xs-1 pull-left" placeholder="1" value={{tablePageID}}></li> 
+         <li><div class="textf pull-left">共 {{tablePages}} 页</div></li> 
+         {{#nextPageExists}}<li class="ui-table-control-next" data-columns-page="{{nextPage}}"><a title="Go to next page">&gt;</a></li>{{/nextPageExists}} 
+         {{^nextPageExists}}<li class="disabled" data-columns-page="{{nextPage}}"><a title="Go to next page">&gt;</a></li>{{/nextPageExists}} 
+         <li><a title="Go to last page">&gt;&gt;</a></li> 
+         <li><div class="col-md-2 col-xs-3 ui-table-size">{{{showRowsMenu}}}</div></li> 
+      </ul> 
+    </div> 
+  </div>
+  <div class="col-md-3 margin-top"> 
+    <div class="dataTables_info text-right" id="sample_1_info"> {{resultRange.start}} &ndash; {{resultRange.end}} 共 {{tableTotal}} 条 </div> 
+  </div>
 </div>

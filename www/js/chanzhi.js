@@ -11,12 +11,16 @@ $.extend(
         $("[data-tpl]").each(function(){
             var $container = $(this);
             var $tpl = $container.data('tpl');
+
             var $query = $container.data('url');
             var $data = {};
 
             if($query){
-              $query = $query.replace('/', '*');
+              $query = $query.replace(/\//g, '*');
               var $url = '/api-rest-' + $query;
+
+              if($tpl == 'table') return $.loadTable($container, $url);
+
               $.ajax({
                 url: $url,
                 async: false,
@@ -42,6 +46,31 @@ $.extend(
             });
         })
       },
+    loadTable: function($container, $url)
+    {
+      var $params = {'orderBy':'', 'recTtotal':0, 'recPerPage': 5, 'pageID': 1};
+      $alias  = {'orderBy':'sortBy', 'recTotal':'total', 'recPerPage':'size', 'pageID':'page'};
+      $.ajax({
+        url: $url,
+        data: $params,
+        dataType: 'json',
+        success: function(json) {
+          $data  = json.data;
+          $pager = json.pager;
+          example = $container.columns({
+            url: $url,
+            templateFile: "htmltpl/common/table.html",
+            params: $params,
+            alias: $alias,
+            data:  $data,
+            pages: $pager.recTotal,
+            total: $pager.recPerPage,
+            plugins:['ajaxpaging'],
+            schema: $shema
+          });
+        }
+      });
+    },
 
     setAjaxForm: function(formID, callback)
     {

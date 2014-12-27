@@ -22,22 +22,22 @@ class api extends control
         if($resources == 'companies/login' || $resources == 'employees/login') 
         {
             $result = $this->login($resources, $type);
-        }elseif($type == 'GET') 
+        }elseif($type == 'GET')
         {
             $result = $this->get($this->host . $resources);
-        }elseif($type == 'POST') 
+        }elseif($type == 'POST')
         {
             $result = $this->post($this->host . $resources);
         }
 
         if(empty($result)) $result = array('result' => 'fail', 'message' => '与服务端通信失败');
-        //echo json_encode($result);
-        $this->send($result);
+        echo json_encode($result);
+        //$this->send($result);
     }
 
     public function get($url)
     {
-        $result = $this->curl($url, 'GET');
+        $result = $this->curl($url, 'GET', $_GET ? $_GET : $_POST);
         $result = @json_decode($result, true);
         return $result;
     }
@@ -101,7 +101,18 @@ class api extends control
         }
 
         $result = curl_exec($curl); // 执行操作
+        $this->log($type, $url, $option, $result);
         return $result;
         curl_close ($curl); // 关闭CURL会话
+    }
+
+    public function log($type, $url, $option, $result)
+    {
+        /* Set the error info. */
+        $errorLog  = "\n" . date('H:i:s') . "url: $url, type: $type, data:" . json_encode($option) . " result:$result";
+        /* Save to log file. */
+        $errorFile = $this->app->getLogRoot() . 'curl_' . date('Ymd');
+        $fh = @fopen($errorFile, 'a');
+        if($fh) fwrite($fh, strip_tags($errorLog)) && fclose($fh);
     }
 }
