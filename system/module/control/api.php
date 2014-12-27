@@ -31,8 +31,7 @@ class api extends control
         }
 
         if(empty($result)) $result = array('result' => 'fail', 'message' => '与服务端通信失败');
-        echo json_encode($result);
-        //$this->send($result);
+        $this->send($result);
     }
 
     public function get($url)
