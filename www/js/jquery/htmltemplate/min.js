@@ -21,7 +21,7 @@ $.extend(
                 success: function(data){
                   data = JSON.parse(data);
                   if(data.result == 'success'){
-                    for($key in data.data) $data[$key] = data.data[$key];
+                    for($key in data.data) $tpldata[$key] = data.data[$key];
                   }
                 }
               });
@@ -34,7 +34,7 @@ $.extend(
               url: $tplFile,
               async: false,
               success: function(file){
-                var output = Mustache.render(file, $data);
+                var output = Mustache.render(file, $tpldata);
                 $container.html(output);
               }
             });
@@ -49,14 +49,14 @@ $.extend(
         data: $params,
         dataType: 'json',
         success: function(json) {
-          $data  = json.data;
+          $tpldata  = json.data;
           $pager = json.pager;
           example = $container.columns({
             url: $url,
             templateFile: "htmltpl/common/table.html",
             params: $params,
             alias: $alias,
-            data:  $data,
+            data:  $tpldata,
             pages: $pager.recTotal,
             total: $pager.recPerPage,
             plugins:['ajaxpaging'],
