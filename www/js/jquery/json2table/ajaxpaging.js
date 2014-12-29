@@ -22,10 +22,10 @@ ColumnsPlugins.ajaxpaging = {
             dataType: 'json',
             data: $params,
             success: function(json) {
-              $data  = json.data.stories;
-              $pager = json.data.pager;
+              $data  = json.data;
+              $pager = json.pager;
               $this.total = $pager.recTotal;
-              $this.pages = $pager.pageTotal;
+              $this.pages = Math.ceil($pager.recTotal/$pager.recPerPage);
               $this.setMaster($data);
               $this.create();
             }

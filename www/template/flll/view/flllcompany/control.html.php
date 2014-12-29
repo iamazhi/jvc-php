@@ -6,4 +6,20 @@
       </form>
     </div><!--E .block-->
 </div><!--E .right-con-->
+<script language='javascript'>
+$data = {};
+//$data.aaa = "bbb";
+$string = "$data.format_name_short = function () {
+    return function (text, render) {
+        if($data.name_short == 'ffffffffff') return '公公';
+        return '女女';
+    }
+};";
+
+// $data.format_business_no = function () {
+    // return function (text, render) {
+            // return "oye";
+    // }
+// };
+</script>
 <?php include TPL_ROOT . 'common/footer.html.php';?>

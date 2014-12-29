@@ -9,6 +9,7 @@
 
 </div><!--E .footer-->
 
+<?php include TPL_ROOT . 'common/htmltemplate.html.php';?>
 <?php
 if($config->debug) js::import($jsRoot . 'jquery/form/min.js');
 if(isset($pageJS)) js::execute($pageJS);

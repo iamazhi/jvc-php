@@ -16,7 +16,6 @@ $shema =  [
     {"header":"生日",   "key":"birthday"},
     {"header":"性别",   "key":"gender"}
 ];
-
 </script>
 <?php include TPL_ROOT . 'common/json2table.html.php';?>
 <?php include TPL_ROOT . 'common/footer.html.php';?>

@@ -5,7 +5,6 @@ $(document).ready(function()
 
     setRequiredFields();
 
-    $.loadHtmlTpl(config['currentModule'], config['currentMethod']); //added by azhi
     $.setAjaxForm('#ajaxForm');
     $.setAjaxDeleter('.deleter');
     $.setReloadDeleter('.reloadDeleter');

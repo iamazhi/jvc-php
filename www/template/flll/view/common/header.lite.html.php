@@ -46,7 +46,8 @@ $themeRoot = $webRoot . "template/flll/theme/";
       js::import($jsRoot     . 'all.js');
   }
 
-  css::import($themeRoot . $config->template->theme . '/style.css');
+  if($this->moduleName == 'flll') css::import($themeRoot . $config->template->theme . '/appstyle.css');
+  if($this->moduleName != 'flll') css::import($themeRoot . $config->template->theme . '/style.css');
 
   /* Import customed css file if it exists. */
   $customCssFile = $this->app->getDataRoot() . 'css' . DS . $this->config->template->name . DS . $this->config->template->theme . DS . 'style.css';

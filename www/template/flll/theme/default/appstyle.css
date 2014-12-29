@@ -1,0 +1,374 @@
+body {
+  font-family: "Microsoft Yahei",Helvetica,"SimHei",Arial,Tahoma;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333; }
+
+/*clear float*/
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+ul {
+  padding-left: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  color: #333; }
+
+a:hover {
+  text-decoration: none; }
+
+.blue {
+  color: #0068b7; }
+
+.margint {
+  margin-top: 60px; }
+
+.header {
+  background-color: #ed3221;
+  height: 60px;
+  color: #fff;
+  line-height: 60px;
+  min-width: 1170px; }
+  .header .comp-name {
+    float: left;
+    width: 100px;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 15px; }
+  .header .logo {
+    float: left;
+    position: relative; }
+  .header .navbox {
+    float: left;
+    padding-top: 15px;
+    font-size: 16px;
+    width: 625px; }
+    .header .navbox a {
+      color: #fff; }
+    .header .navbox .nav {
+      float: right; }
+    .header .navbox .nav > li {
+      float: left; }
+    .header .navbox .navbar-nav {
+      margin: 0; }
+    .header .navbox .nav > li > a:hover, .header .navbox .navbar-nav > .active > a {
+      background-color: #fff;
+      color: #ed3221;
+      border-radius: 4px; }
+    .header .navbox .nav > li > a {
+      margin: 0 8px; }
+    .header .navbox .nav > li > a {
+      padding: 5px 10px; }
+  .header .userbox {
+    float: right;
+    background-color: #fd7c70;
+    padding: 0 15px;
+    width: 200px; }
+    .header .userbox i {
+      margin-right: 5px;
+      font-size: 18px; }
+    .header .userbox a {
+      color: #b80f00; }
+    .header .userbox a:hover {
+      color: #e02d1c;
+      text-decoration: underline; }
+
+.container {
+  width: 1170px; }
+
+.appbox {
+  padding-top: 35px; }
+  .appbox .lunbo {
+    margin-bottom: 20px; }
+    .appbox .lunbo .fa {
+      top: 50%;
+      position: absolute;
+      z-index: 5;
+      display: inline-block; }
+    .appbox .lunbo .fa-chevron-left {
+      width: 30px;
+      height: 30px;
+      margin-top: -15px;
+      font-size: 30px; }
+  .appbox .product h2 {
+    font-size: 18px;
+    color: #959595;
+    font-weight: 400;
+    margin: 10px; }
+    .appbox .product h2 a {
+      float: right;
+      color: #959595;
+      font-size: 16px; }
+      .appbox .product h2 a:hover {
+        color: #ed3221; }
+  .appbox .product .mt {
+    margin-top: 0; }
+  .appbox .product .thumbnail {
+    padding: 0; }
+  .appbox .product .caption {
+    background-color: #f4f4f4;
+    padding: 5px 9px; }
+    .appbox .product .caption h3 {
+      margin-top: 5px;
+      font-size: 16px;
+      color: #666; }
+      .appbox .product .caption h3 .price {
+        float: right;
+        color: #f00; }
+  .appbox .tips {
+    background-color: #f2f2f2;
+    padding: 10px 15px;
+    color: #666; }
+    .appbox .tips .fa {
+      font-size: 18px;
+      margin-right: 5px; }
+    .appbox .tips .form-inline .form-control {
+      width: 100%; }
+  .appbox .messages li a {
+    width: 100%;
+    margin: 0 !important; }
+  .appbox .list {
+    padding: 10px;
+    background-color: #fff; }
+    .appbox .list .onbox {
+      width: 5%; }
+    .appbox .list .listbox {
+      width: 94%; }
+    .appbox .list .picbox {
+      width: 10%;
+      position: relative; }
+      .appbox .list .picbox .nub {
+        position: absolute;
+        right: 8px;
+        top: -6px;
+        color: #fff;
+        padding: 5px 7px;
+        background-color: #ed3221;
+        font-size: 11px; }
+    .appbox .list .messbox {
+      width: 89%;
+      position: relative; }
+      .appbox .list .messbox h4 {
+        color: #333;
+        font-size: 16px; }
+      .appbox .list .messbox p {
+        color: #a0a0a0; }
+      .appbox .list .messbox span {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        color: #a0a0a0; }
+    .appbox .list .dizhibox {
+      width: 100%; }
+      .appbox .list .dizhibox .fa {
+        font-size: 18px;
+        color: #f00; }
+      .appbox .list .dizhibox h4 b {
+        font-weight: 400;
+        margin-left: 10px;
+        font-size: 14px;
+        color: #a0a0a0; }
+    .appbox .list li {
+      padding: 10px;
+      border-bottom: 1px solid #eee; }
+      .appbox .list li .on {
+        border-radius: 4px;
+        padding: 5px 10px;
+        background-color: #fc847a;
+        color: #fff;
+        display: inline-block; }
+      .appbox .list li a {
+        display: inline-block;
+        margin: 0 15px;
+        color: #898989; }
+        .appbox .list li a:hover {
+          color: #fc847a; }
+    .appbox .list .mt {
+      margin-top: 40px; }
+  .appbox .tab-list li {
+    float: left;
+    width: 25%;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+    text-align: center;
+    cursor: pointer;
+    color: #898989; }
+    .appbox .tab-list li.on {
+      position: relative;
+      border-bottom: 2px solid #ed3221;
+      color: #ed3221; }
+  .appbox .choose {
+    margin: 10px 0; }
+    .appbox .choose li {
+      float: left;
+      position: relative; }
+      .appbox .choose li a {
+        display: inline-block;
+        padding: 3px 9px;
+        border-radius: 4px;
+        border: 1px solid #fed4d4;
+        background-color: #fff;
+        margin: 0 5px;
+        color: #585858; }
+      .appbox .choose li .drownmenu {
+        position: absolute;
+        z-index: 100;
+        border: 1px solid #fed4d4;
+        border-radius: 0;
+        background-color: #fff;
+        padding: 3px;
+        top: 28px;
+        left: 6px; }
+        .appbox .choose li .drownmenu li {
+          float: none; }
+          .appbox .choose li .drownmenu li a {
+            border: none;
+            padding: 3px 10px;
+            border-bottom: 1px solid #ddd;
+            border-radius: 0; }
+          .appbox .choose li .drownmenu li:last-child a {
+            border-bottom: 0; }
+  .appbox .subbox {
+    background-color: #f1dedd;
+    padding: 10px 5px; }
+    .appbox .subbox li {
+      float: left;
+      color: #898989;
+      margin: 0 10px;
+      padding: 2px 8px; }
+      .appbox .subbox li.on {
+        background-color: #fc847a;
+        color: #fff;
+        border-radius: 4px; }
+  .appbox .tipsbox {
+    padding: 10px;
+    color: #ed3221;
+    background-color: #f2f2f2;
+    margin-bottom: 8px;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4; }
+    .appbox .tipsbox .fa {
+      margin-right: 6px; }
+  .appbox .cartbox {
+    margin-top: 10px; }
+  .appbox .bagbox {
+    background-color: #fff;
+    border-top: 1px solid #e4e4e4; }
+    .appbox .bagbox .block {
+      position: relative;
+      padding: 10px;
+      border-bottom: 1px solid #e4e4e4; }
+      .appbox .bagbox .block h4 {
+        margin: 0;
+        font-size: 16px; }
+        .appbox .bagbox .block h4 p {
+          margin-top: 8px; }
+      .appbox .bagbox .block .add {
+        position: absolute;
+        right: 10px;
+        top: 8px; }
+        .appbox .bagbox .block .add p {
+          margin-bottom: 0; }
+        .appbox .bagbox .block .add .shuzi {
+          color: #ed3221; }
+          .appbox .bagbox .block .add .shuzi span {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px; }
+          .appbox .bagbox .block .add .shuzi .red {
+            background-color: #fc847a;
+            color: #fff; }
+          .appbox .bagbox .block .add .shuzi .blue {
+            color: #448aca;
+            background-color: #d9f6ff; }
+        .appbox .bagbox .block .add .time {
+          color: #b5b5b5;
+          text-align: right; }
+      .appbox .bagbox .block .textbox {
+        position: relative;
+        color: #b5b5b5; }
+        .appbox .bagbox .block .textbox .text {
+          width: 90%;
+          cursor: pointer; }
+        .appbox .bagbox .block .textbox .fa {
+          position: absolute;
+          right: 10px;
+          top: 3px; }
+
+.footer {
+  text-align: center;
+  padding: 40px 0 10px;
+  font-size: 12px;
+  color: #666; }
+  .footer a {
+    margin: 0 10px;
+    color: #666; }
+  .footer a:hover {
+    color: #b80f00; }
+
+@media (max-width: 480px) {
+  .container {
+    width: auto; }
+
+  .appbox {
+    padding-top: 0; }
+    .appbox .list li a {
+      margin: 5px; }
+    .appbox .subbox li {
+      margin: 0 2px; }
+    .appbox .tipsbox {
+      background-color: #fff; }
+
+  .appbox .lunbo {
+    margin-bottom: 10px; }
+
+  .tips .btn {
+    display: none; }
+  .tips .col-md-10 {
+    padding-right: 0;
+    padding-left: 0; }
+  .tips .form-group {
+    margin-bottom: 0; }
+
+  .container {
+    padding-right: 0;
+    padding-left: 0; }
+
+  .appbox {
+    background-color: #f2f2f2; }
+    .appbox .list {
+      padding: 5px; }
+      .appbox .list .onbox {
+        width: 18%; }
+      .appbox .list .listbox {
+        width: 81%; }
+      .appbox .list .picbox {
+        width: 25%; }
+        .appbox .list .picbox .nub {
+          right: -4px; }
+      .appbox .list .messbox {
+        margin-left: 10px;
+        width: 70%; }
+      .appbox .list .dizhibox {
+        width: 100%;
+        margin-left: 0; }
+
+  .thumbnail {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0; } }
